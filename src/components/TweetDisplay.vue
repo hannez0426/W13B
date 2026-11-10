@@ -38,20 +38,17 @@ export default {
       required: true
     }
   },
+    data() {
+        return {
+            isGridView: false
+        };
+    },
 
-  data() {
-    return {
-      // False means list view, true means card view.
-      isGridView: false
-    };
-  },
-
-  methods: {
-    // Switch between the two layouts.
-    toggleView() {
-      this.isGridView = !this.isGridView;
-    }
-  }
+    methods: {
+        toggleView() {
+            this.isGridView = !this.isGridView;
+        }
+}
 };
 </script>
 
